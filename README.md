@@ -1,20 +1,26 @@
-# AVAION v0.5.0
+# AVAION v0.6.0
 
-Alpha 0.5 release with redesigned inspection workspace.
+First Supabase-connected alpha release.
 
 ## Includes
 
-- Dashboard
-- Properties module
-- Room-card inspection workspace
-- HHSRS hazard dropdown per room
-- Property health score
-- AVAION AI guidance panel
-- Photo count placeholders
-- Maintenance job flags
-- Full landlord report preview
-- Print / Save PDF action
+- Supabase Auth login/sign-up screen
+- Live property list from Supabase
+- Add property form
+- Delete property
+- Dashboard stats powered by live property count
+- Existing inspection workspace retained locally
+- Landlord report preview retained
 
-## Deploy
+## Required before deploying
 
-Upload the contents of this folder to GitHub and let Vercel redeploy.
+In Vercel, add these environment variables:
+
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+## Supabase setup
+
+Run `supabase-alpha-policies.sql` in Supabase SQL Editor so logged-in alpha users can read and write properties.
+
+For easiest testing, in Supabase Auth settings, temporarily disable email confirmation while testing alpha sign-up.
