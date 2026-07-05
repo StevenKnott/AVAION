@@ -1,10 +1,27 @@
-# AVAION v0.1
+# AVAION v0.3
 
-First deployable MVP for AVAION: a mobile-friendly SaaS prototype for letting agency inspections.
+Live prototype for AVAION, the operating system for modern property businesses.
 
-## Run locally
-npm install
-npm run dev
+## Added in v0.3
+
+- Guided inspection workflow
+- Property selection from portfolio
+- Room-by-room checks
+- Risk status per prompt
+- Room notes
+- Photo upload input/count
+- Tenant comments
+- Billing status
+- Report preview
+- Print/save PDF button
 
 ## Deploy
-Upload this project to GitHub and import it into Vercel as a Next.js project.
+
+Upload the project contents to GitHub. Vercel should auto-deploy as a Next.js project.
+
+Recommended Vercel settings:
+
+- Framework Preset: Next.js
+- Install Command: npm install
+- Build Command: npm run build
+- Output Directory: blank
