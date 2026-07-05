@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { margin: 0; background: #070b16; color: #f8fafc; }
+* { box-sizing: border-box; }
+.gradient-text { background: linear-gradient(90deg,#a855f7,#3dd9c5); -webkit-background-clip: text; color: transparent; }
+.glass { background: rgba(17, 24, 39, 0.72); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 60px rgba(0,0,0,.25); }
