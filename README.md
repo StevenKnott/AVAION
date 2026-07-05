@@ -1,3 +1,20 @@
-# AVAION v0.4
+# AVAION v0.5.0
 
-Adds clearer inspection dropdowns, HHSRS hazard selection, and an always-visible report preview button.
+Alpha 0.5 release with redesigned inspection workspace.
+
+## Includes
+
+- Dashboard
+- Properties module
+- Room-card inspection workspace
+- HHSRS hazard dropdown per room
+- Property health score
+- AVAION AI guidance panel
+- Photo count placeholders
+- Maintenance job flags
+- Full landlord report preview
+- Print / Save PDF action
+
+## Deploy
+
+Upload the contents of this folder to GitHub and let Vercel redeploy.
