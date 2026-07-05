@@ -1,6 +1,6 @@
 {
-  "name": "avaion-v03",
-  "version": "0.3.0",
+  "name": "avaion-v04",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

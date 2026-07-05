@@ -80,11 +80,29 @@ export const properties = [
 
 export const rooms = ["Exterior", "Entrance", "Hallway", "Kitchen", "Lounge", "Bedroom 1", "Bedroom 2", "Bathroom", "Garden", "Compliance"];
 
-export const prompts = [
-  "Any signs of damp or mould?",
-  "Ventilation adequate?",
-  "Heating working?",
-  "Electrical concerns visible?",
-  "Trip, fall or safety hazards?",
-  "Tenant comments recorded?"
+export const roomPrompts: Record<string, string[]> = {
+  Exterior: ["Brickwork, roofline and gutters appear safe", "Windows and doors secure", "No visible external hazards", "Bins, access and boundaries acceptable"],
+  Entrance: ["Front door locks and entry system working", "Flooring and lighting safe", "Smoke alarm present where required", "No obstruction or trip hazard"],
+  Hallway: ["Stairs and handrails secure", "Decorative condition acceptable", "No signs of damp or mould", "Escape route clear"],
+  Kitchen: ["Appliances visually safe", "Worktops and units in good order", "Sink, taps and waste pipework acceptable", "Ventilation adequate"],
+  Lounge: ["Heating source working", "Electrics visually safe", "Windows and ventilation acceptable", "No tenant-related damage visible"],
+  "Bedroom 1": ["No signs of damp or mould", "Windows open and close", "Ventilation adequate", "Flooring and walls acceptable"],
+  "Bedroom 2": ["No signs of condensation", "Furniture not blocking vents", "Windows and blinds acceptable", "No overcrowding concerns"],
+  Bathroom: ["Extractor fan working", "Sealant and grout condition acceptable", "No active leaks", "Sanitaryware secure and usable"],
+  Garden: ["Garden reasonably maintained", "Fences and gates safe", "No rubbish accumulation", "Outbuildings visually safe"],
+  Compliance: ["Smoke alarms tested", "CO alarm tested if required", "HHSRS hazards considered", "Tenant comments recorded"]
+};
+
+export const riskOptions = ["No issue", "Monitor", "Action required", "Urgent"];
+
+export const hhsrsOptions = [
+  "No HHSRS hazards observed",
+  "Damp and mould growth",
+  "Excess cold",
+  "Falls on stairs / trip hazard",
+  "Electrical hazard",
+  "Fire safety concern",
+  "Carbon monoxide / fuel combustion concern",
+  "Security / entry hazard",
+  "Other hazard - manager review required"
 ];
